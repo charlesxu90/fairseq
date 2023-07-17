@@ -1,0 +1,40 @@
+name: fairseq-3.10-env
+
+channels:
+  - conda-forge
+  - defaults
+  - anaconda
+  - pytorch     # For torch series
+
+dependencies:
+  - python=3.10
+  - pip
+
+# jupyter-lab dependencies
+  - ipython           
+  - ipywidgets
+  - jupyterlab
+  - jupyterlab-git
+  - jupyterlab-nvdashboard
+  - jupyterlab-lsp
+  - matplotlib
+
+# machine learning & data analysis dependencies
+  - pytorch::pytorch
+  - torchvision
+  - torchaudio
+  - tqdm
+  - numpy          
+  - scipy
+  - pandas
+  - tensorboard
+  - biopython
+  - scikit-learn
+  - numba
+  - biopandas
+  - conda-forge::rdkit
+  - conda-forge::cudnn==8.8.0.121 
+  - conda-forge::cudatoolkit==11.8.0
+
+  # - pip:
+  #   - -r requirements.txt
